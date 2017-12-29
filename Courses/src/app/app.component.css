@@ -1,0 +1,15 @@
+li{
+    background-color: grey;
+    list-style: none;
+    border: 2px solid black;
+    width: 400px;
+    margin-left: 500px;
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    margin-top: 10px;
+}

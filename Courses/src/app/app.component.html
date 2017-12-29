@@ -1,0 +1,17 @@
+<div>
+  <h1>{{heading}}</h1>
+
+  <ul>
+    <li *ngFor = 'let course of courses'>{{ course }}</li>
+  </ul>
+
+  <form>
+    <div>
+      <label for = "courseInput">New Course:</label>
+      <input type="text" id = "courseInput" placeholder="hit enter rather than submit" name="newCourse" [(ngModel)] = "newCourse"
+       (keyup.enter) = "addCourse()">
+    </div>
+
+  </form>
+  <button (click) = "addCourse()"> Submit </button>
+</div>
